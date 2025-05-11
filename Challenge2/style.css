@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f4f8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-image: url(../Challenge1/img/bg-img.jpg);
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .avatar {
+    transform: scale(1.05);
+}
+
+.name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.title {
+    font-size: 1rem;
+    color: #0077cc;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.txt {
+    font-size: 0.9rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #0077cc;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
